@@ -1,0 +1,188 @@
+/* Import a modern, readable font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+    background-color: #F4F1DE; /* Light beige background */
+    font-family: 'Nunito', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 15%;
+    padding: 20px;
+    color: #333333; /* Dark text for readability */
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3D405B; /* Slate blue-gray */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F4F1DE; /* Light text for contrast */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E07A5F; /* Soft coral red on hover */
+}
+
+/* Header Styling */
+header h1 {
+    background-color: #3D405B; /* Slate blue-gray */
+    color: #F4F1DE; /* Light text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2.5rem;
+}
+
+header h2, header h3 {
+    background-color: #81B29A; /* Muted teal green */
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Article Styling */
+article {
+    background-color: #ffffff; /* Pure white for the article background */
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Button Styling */
+.button {
+    background-color: #E07A5F; /* Coral red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #D9534F; /* Slightly darker on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3D405B; /* Same as nav and header */
+    color: #F4F1DE;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 3px solid #E07A5F; /* Coral red top border */
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.footer-social-links a {
+    margin: 0 10px;
+    color: #F4F1DE;
+}
+
+.footer-social-links a:hover {
+    color: #E07A5F;
+}
+
+/* Breadcrumbs Navigation */
+.breadcrumbs {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+    color: #E07A5F;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E07A5F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+/* Responsive font sizes for mobile */
+@media (max-width: 768px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
