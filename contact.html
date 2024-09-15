@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Pocket Sized Posts</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pocket Sized Posts</h1>
+        <nav>
+            <ul>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/aleksandra-siwiec-280456185">LinkedIn</a></li>
+                <li><a href="https://www.redbubble.com/people/siwiecola/shop?asc=u">RedBubble Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or fill out the form below.</p>
+
+        <!-- Contact Form -->
+        <form action="submit_contact.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>Or, you can email me directly at: <a href="mailto:siwiecola@gmail.com">siwiecola@gmail.com</a></p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pocket Sized Posts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
